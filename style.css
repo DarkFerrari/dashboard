@@ -236,12 +236,17 @@ body > *{
     grid-row: 2/3 ;
     width: 100%;
     justify-content: end;
+    align-items: center;
     /* justify-content: flex-end; */
 }
 
 .main-content-containers-options>span{
     display: grid;
     /* border: 2px solid red; */
+}
+
+span{
+    padding: 0px 10px;
 }
 
 .side-content-containers{
@@ -282,5 +287,17 @@ body > *{
     margin: 20px 0;
   }
 
+.trending>*{
+    display: flex;
+    /* border: solid 2px red; */
+    align-items: center;
+}
 
+.trending img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    margin: 0px 10px;
+    border: 1px solid black;
+}
 
