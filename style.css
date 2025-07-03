@@ -7,6 +7,7 @@ html, body {
     padding: 0;
     height: 100%;
     font-family:"Roboto", sans-serif;
+    background-color: rgb(216, 216, 227);
   }
   
 h4,h3{
@@ -33,7 +34,6 @@ body > *{
   }  
 
 .container{
-    background-color: rgb(216, 216, 227);
     display: grid;
     grid-template-rows: 1fr 6fr;
     grid-template-columns: 1fr 4fr;
@@ -68,15 +68,23 @@ body > *{
     grid-column: 1/2;
     display: flex;
     gap: 15px;
-    /* align-items: center; */
   input{
     border-radius: 12px;
     padding: 4px;
+
   }
   span{
     display: flex;
     /* align-items: center; */
   }
+}
+
+.search-bar{
+    max-width: 100%;
+  min-width: 0; 
+  /* max-width: 600px; */
+  flex: 1;
+  width: 100%;
 }
 
 .header-upper .header-profile>*{
@@ -164,6 +172,8 @@ body > *{
     color: white;
     padding: 20px;
     /* position: fixed; */
+    min-width: 242px;
+    /* height: 100%; */
 }
 
 .dashboard{
